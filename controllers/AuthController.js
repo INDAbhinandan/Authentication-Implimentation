@@ -4,7 +4,7 @@ import { hashPassword, comparePassword } from "../helper/authHelper.js";
 import userModel from "../models/userModel.js";
 import JWT from 'jsonwebtoken';
 
-// Registration controller
+// Here Registration controller
 export const registerController = async (req, res) => {
     try {
         const { name, email, password, phone, address } = req.body;
